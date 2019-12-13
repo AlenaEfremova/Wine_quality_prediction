@@ -49,15 +49,21 @@ GUI or API calls predict the quality of the wine based on our model and return t
 
 ### Running the application locally
 #### Directly
-
-1. Run api.py using below command to start Flask API
+Run api.py using below command to start Flask API
 ```
 cd Wine_quality_prediction
 python api.py
 ```
 By default, flask will run on port 5000.
+#### On Docker
+```
+cd Wine_quality_prediction
+docker pull alenaefremova/wine_quality_prediction:v1
+docker run -it -p 5000:5000 alenaefremova/wine_quality_prediction:v1
+```
 
-2. Navigate to URL http://0.0.0.0:5000/ or http://name-your-pc:5000/
+#### Testing the application
+Navigate to URL http://0.0.0.0:5000/ or http://name-your-pc:5000/
 
 You should be able to view the homepage as below
 
